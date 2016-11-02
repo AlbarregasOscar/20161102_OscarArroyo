@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/estilos.css" />
         <title>Opciones</title>
     </head>
     <body>

@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/estilos.css" />
         <title>Update</title>
     </head>
     <body>
@@ -20,8 +21,10 @@
             if (ave == null) {
         %>
         <form method="post" action="ControladorConsultas">
+            <fieldset>
             <h3> No has seleccionado ningun ave para modificarla </h3>
             <input type="submit" name="volver" value="Volver"/>
+            </fieldset>
         </form>
         <%
         } else {
@@ -31,6 +34,7 @@
             String dia = sub[2];
         %>
         <form method="post" action="ControladorConsultas">
+            <fieldset>
             <label> Anilla: </label>
             <input type="text" name="anilla" value="<%= ave.getAnilla()%>" readonly>
             </br>
@@ -114,6 +118,7 @@
             </br>
             <input type="submit" name="continuarUpdate" value="Continuar"/>
             <input type="submit" name="cancelar" value="Cancelar"/>
+            </fieldset>
         </form>
         <%
             }

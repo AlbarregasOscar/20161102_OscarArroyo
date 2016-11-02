@@ -9,10 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/estilos.css" />
         <title>Inserccion correcta</title>
     </head>
     <body>
         <h1><%=request.getAttribute("correcto")%> </h1>
-        <h3><a href="<%=request.getContextPath()%>"> Enlace al index </a></h3>
+        <h3 id="correcto"><a href="<%=request.getContextPath()%>"> Enlace al index </a></h3>
     </body>
 </html>

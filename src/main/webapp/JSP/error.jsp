@@ -9,10 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/estilos.css" />
         <title>Error en la inserccion</title>
     </head>
     <body>
         <h1><%=request.getAttribute("error")%> </h1>
-        <h3><a href="<%=request.getContextPath()%>/index.jsp"> Enlace al index </a></h3>
+        <h3 id="error"><a href="<%=request.getContextPath()%>/index.jsp"> Enlace al index </a></h3>
     </body>
 </html>

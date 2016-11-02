@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/CSS/estilos.css" />
         <title>Pagina para insertar registros</title>
     </head>
     <body>
@@ -27,6 +28,7 @@
             }
         %>
         <form method="post">
+            <fieldset>
             <label> Anilla </label>
             <%if (ave == null) {%>
             <input type="text" name="anilla"/>
@@ -129,6 +131,7 @@
             <input type="submit" name="enviar" value="Enviar" formaction="JSP/insertarIntermedia.jsp"/>
             <input type="reset" name="limpiar" value="Limpiar"/>
             <input type="submit" name="cancelar" value="Cancelar" formaction="<%=request.getContextPath()%>/ControladorInsert"/>
+            </fieldset>
         </form>
     </body>
 </html>

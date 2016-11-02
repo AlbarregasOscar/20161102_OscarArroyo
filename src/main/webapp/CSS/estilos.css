@@ -1,0 +1,22 @@
+body{
+    background-color: gainsboro;
+    margin: 10px;
+}
+
+h3{
+    margin:5px;
+}
+h1{
+    margin:5px;
+}
+fieldset{
+    width: 30%;
+    background-color: #f2f1f1;
+}
+input{
+    background-color: #fbf6c3;
+    margin:5px;
+}
+select{
+    background-color: #fbf6c3
+}
