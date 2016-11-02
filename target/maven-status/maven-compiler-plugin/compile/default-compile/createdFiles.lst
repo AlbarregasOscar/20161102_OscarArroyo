@@ -1,0 +1,5 @@
+es\albarregas\controladores\ControladorConsultas.class
+es\albarregas\controladores\ControladorOpciones.class
+es\albarregas\controladores\ControladorInsert.class
+es\albarregas\beans\Ave.class
+es\albarregas\controladores\ControladorUpdateODelete.class
