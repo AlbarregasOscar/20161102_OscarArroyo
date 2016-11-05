@@ -76,6 +76,7 @@ public class ControladorUpdateODelete extends HttpServlet {
                     String elemento = parametros.nextElement();
                     if (elemento.startsWith("ave")) {
                         //Hacemos una select y mostramos tantos registros como el usuario haya marcado en el comboBox del jsp.
+// SERIA CONVENIENTE CONSTRUIR UNA SENTENCIA WHERE
                         String sql = "select * from aves where anilla =?";
                         preparada = conexion.prepareStatement(sql);
                         preparada.setString(1, request.getParameter(elemento));
@@ -95,6 +96,7 @@ public class ControladorUpdateODelete extends HttpServlet {
                         }
                     }
                 }
+// ESTO ES LO MISMO PARA LAS DOS OPERACIONES
             } catch (SQLException e) {
                 e.printStackTrace();
             } finally {

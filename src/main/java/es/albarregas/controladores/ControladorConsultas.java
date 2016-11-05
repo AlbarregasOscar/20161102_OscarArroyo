@@ -111,6 +111,8 @@ public class ControladorConsultas extends HttpServlet {
             int an = Integer.parseInt(request.getParameter("anio"));
             Connection conexion = null;
             Statement sentencia = null;
+// PARA QUÉ CAMBIAS TODO SI ES POSIBLE QUE NO SE CAMBIE NADA
+// SERIA CONVENIENTE UNA SENTENCIA PREPARADA
             String sql
                     = "UPDATE aves SET especie='" + especie + "',lugar='" + lugar
                     + "',fecha='" + an + "/" + me + "/" + di + "'"
@@ -121,7 +123,7 @@ public class ControladorConsultas extends HttpServlet {
             boolean controlarFecha = false;
             boolean controlarEspecie = true;
             boolean controlarLugar = true;
-
+// POR ESTO SALE QUE NO SE HA SELECCIONADO UNA ANILLA AL MODIFICAR UN REGISTRO EXISTENTE
             if (especie.isEmpty()) {
                 controlarEspecie = false;
                 url = "errorUpdateDelete.jsp";
